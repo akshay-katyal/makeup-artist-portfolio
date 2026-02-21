@@ -2,6 +2,7 @@ import os
 import cloudinary
 import cloudinary.uploader
 from flask import Flask, render_template, request
+from firebase_admin import credentials, firestore 
 from dotenv import load_dotenv
 
 load_dotenv()
