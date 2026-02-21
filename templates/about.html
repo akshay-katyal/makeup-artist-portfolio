@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block title %}About Me{% endblock %}
+
+{% block content %}
+<section class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold brand-font">About Me</h1>
+            <p class="text-muted">Passionate about bringing out your natural beauty</p>
+        </div>
+
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5">
+                <div class="position-relative">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 border border-pink translate-middle-x translate-middle-y z-n1 mt-4 ms-4 rounded-4" style="border: 2px solid var(--primary-pink) !important;"></div>
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=800" class="img-fluid rounded-4 shadow" alt="Sophia Martinez">
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+                <h2 class="brand-font mb-3">Sophia Martinez</h2>
+                <p class="text-uppercase small fw-bold mb-4" style="color: var(--primary-pink); letter-spacing: 2px;">Professional Makeup Artist</p>
+                
+                <div class="bio-content text-muted">
+                    <p class="mb-4">With over 8 years of experience in the beauty industry, I specialize in creating flawless, personalized makeup looks that enhance natural beauty. Certified by the International Makeup Academy and trained in both classic and contemporary techniques, I’ve had the privilege of working with brides, fashion photographers, and beauty brands.</p>
+                    <p class="mb-4">My philosophy is simple: makeup should be a tool for empowerment and self-expression. I believe in a collaborative approach, working closely with every client to understand their vision and bring it to life with precision and care.</p>
+                </div>
+
+                <div class="row g-4 mt-2">
+                    <div class="col-4 text-center border-end">
+                        <h4 class="brand-font mb-0" style="color: var(--primary-pink);">8+ Years</h4>
+                        <small class="text-muted">Experience</small>
+                    </div>
+                    <div class="col-4 text-center border-end">
+                        <h4 class="brand-font mb-0" style="color: var(--primary-pink);">500+</h4>
+                        <small class="text-muted">Happy Clients</small>
+                    </div>
+                    <div class="col-4 text-center">
+                        <h4 class="brand-font mb-0" style="color: var(--primary-pink);">200+</h4>
+                        <small class="text-muted">Weddings</small>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <a href="/contact" class="btn btn-brand">Work With Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5" style="background-color: var(--bg-light);">
+    <div class="container py-4">
+        <h3 class="text-center brand-font mb-5">Certifications & Training</h3>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="p-4 bg-white rounded shadow-sm text-center">
+                    <i class="fa-solid fa-certificate mb-3 fs-3" style="color: var(--primary-pink);"></i>
+                    <h6 class="fw-bold">Intl. Makeup Academy</h6>
+                    <p class="small text-muted mb-0">Certified Master Artistry</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 bg-white rounded shadow-sm text-center">
+                    <i class="fa-solid fa-award mb-3 fs-3" style="color: var(--primary-pink);"></i>
+                    <h6 class="fw-bold">Bridal Beauty Specialist</h6>
+                    <p class="small text-muted mb-0">Advanced Technique Certification</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-4 bg-white rounded shadow-sm text-center">
+                    <i class="fa-solid fa-wand-sparkles mb-3 fs-3" style="color: var(--primary-pink);"></i>
+                    <h6 class="fw-bold">Editorial Fashion Lab</h6>
+                    <p class="small text-muted mb-0">Runway & Camera Prep Expert</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

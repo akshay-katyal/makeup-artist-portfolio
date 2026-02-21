@@ -1,0 +1,67 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+/* Brand Variables */
+:root {
+    --primary-pink: #f8c0c8;
+    --primary-pink-hover: #f1a1ad;
+    --champagne: #f7e7ce;
+    --text-dark: #1a1a1a;
+    --text-light: #636e72;
+    --bg-light: #fffafb;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, .brand-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.nav-link {
+    color: var(--text-dark) !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary-pink) !important;
+}
+
+/* Custom Buttons */
+.btn-brand {
+    background-color: var(--primary-pink);
+    color: white;
+    border-radius: 6px;
+    padding: 10px 24px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-brand:hover {
+    background-color: var(--primary-pink-hover);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+.footer-dark {
+    background-color: #121418;
+    color: #f1f1f1;
+    margin-top: auto;
+}

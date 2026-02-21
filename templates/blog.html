@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}Beauty Blog & Shop{% endblock %}
+
+{% block content %}
+<section class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold brand-font">Beauty Blog</h1>
+            <p class="text-muted">Pro tips, trends, and behind-the-scenes insights</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=800" class="card-img-top" alt="Skin Prep">
+                    <div class="card-body p-4">
+                        <small class="text-uppercase fw-bold" style="color: var(--primary-pink);">Skin Care</small>
+                        <h5 class="brand-font my-2">5 Secrets to Long-Lasting Bridal Makeup</h5>
+                        <p class="text-muted small">Everything starts with the base. Discover my top prep techniques for brides...</p>
+                        <a href="#" class="text-decoration-none fw-bold small" style="color: var(--text-dark);">Read More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800" class="card-img-top" alt="Editorial Trends">
+                    <div class="card-body p-4">
+                        <small class="text-uppercase fw-bold" style="color: var(--primary-pink);">Trends</small>
+                        <h5 class="brand-font my-2">2026 Editorial Makeup Forecast</h5>
+                        <p class="text-muted small">From glass skin to bold graphic liners, here is what is trending on the runways...</p>
+                        <a href="#" class="text-decoration-none fw-bold small" style="color: var(--text-dark);">Read More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-sm h-100 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=800" class="card-img-top" alt="Kit Essentials">
+                    <div class="card-body p-4">
+                        <small class="text-uppercase fw-bold" style="color: var(--primary-pink);">Tutorial</small>
+                        <h5 class="brand-font my-2">What's In My Professional Kit?</h5>
+                        <p class="text-muted small">A deep dive into the luxury products I use for my celebrity and bridal clients...</p>
+                        <a href="#" class="text-decoration-none fw-bold small" style="color: var(--text-dark);">Read More <i class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5" style="background-color: var(--bg-light);">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold brand-font">Product Favorites</h2>
+            <p class="text-muted">Shop the products I use and swear by</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-2 text-center">
+                <div class="p-3 bg-white rounded shadow-sm mb-3">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc4033c8?auto=format&fit=crop&q=80&w=200" class="img-fluid rounded" alt="Lipstick">
+                </div>
+                <h6 class="small fw-bold mb-1">Matte Velvet Lip</h6>
+                <p class="small text-muted mb-0">$32.00</p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2 text-center">
+                <div class="p-3 bg-white rounded shadow-sm mb-3">
+                    <img src="https://images.unsplash.com/photo-1627384113743-6bd5a479fffd?auto=format&fit=crop&q=80&w=200" class="img-fluid rounded" alt="Foundation">
+                </div>
+                <h6 class="small fw-bold mb-1">Luminous Foundation</h6>
+                <p class="small text-muted mb-0">$55.00</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

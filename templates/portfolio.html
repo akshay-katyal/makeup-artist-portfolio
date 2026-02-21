@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% block title %}Portfolio{% endblock %}
+
+{% block content %}
+<section class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold brand-font">Portfolio</h1>
+            <p class="text-muted">Explore my work across bridal, editorial, and event makeup</p>
+            
+            <div class="d-flex justify-content-center flex-wrap gap-2 mt-4" id="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+                <button class="filter-btn" data-filter="special">Special Events</button>
+                <button class="filter-btn" data-filter="editorial">Editorial</button>
+                <button class="filter-btn" data-filter="personal">Personal Styling</button>
+            </div>
+        </div>
+
+        <div class="row g-4" id="portfolio-grid">
+            <div class="col-md-6 col-lg-4 portfolio-item bridal">
+                <div class="gallery-card shadow-sm rounded overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=800" class="img-fluid" alt="Bridal Makeup">
+                    <div class="gallery-overlay">
+                        <span class="text-white fw-bold">Bridal Look</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 portfolio-item editorial">
+                <div class="gallery-card shadow-sm rounded overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800" class="img-fluid" alt="Editorial Look">
+                    <div class="gallery-overlay">
+                        <span class="text-white fw-bold">Fashion Editorial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 portfolio-item special">
+                <div class="gallery-card shadow-sm rounded overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&q=80&w=800" class="img-fluid" alt="Event Makeup">
+                    <div class="gallery-overlay">
+                        <span class="text-white fw-bold">Gala Glamour</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 portfolio-item bridal">
+                <div class="gallery-card shadow-sm rounded overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?auto=format&fit=crop&q=80&w=800" class="img-fluid" alt="Bridal Details">
+                    <div class="gallery-overlay">
+                        <span class="text-white fw-bold">Bridal Details</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Filter Buttons */
+    .filter-btn {
+        background: white;
+        border: 1px solid #eee;
+        padding: 8px 20px;
+        border-radius: 50px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    .filter-btn:hover, .filter-btn.active {
+        background: var(--primary-pink);
+        color: white;
+        border-color: var(--primary-pink);
+    }
+
+    /* Gallery Cards */
+    .gallery-card {
+        position: relative;
+        cursor: pointer;
+        height: 350px;
+    }
+    .gallery-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    .gallery-card:hover img {
+        transform: scale(1.1);
+    }
+    .gallery-overlay {
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: rgba(248, 192, 200, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .gallery-card:hover .gallery-overlay {
+        opacity: 1;
+    }
+</style>
+{% endblock %}

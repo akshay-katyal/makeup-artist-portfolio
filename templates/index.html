@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<section class="hero-wrapper" style="background: linear-gradient(135deg, #fffafb 0%, #f7e7ce 100%); min-height: 85vh; display: flex; align-items: center; padding: 80px 0;">
+    <div class="container text-center">
+        
+        <div class="mb-4">
+            <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle shadow-sm" style="width: 60px; height: 60px;">
+                <i class="fa-solid fa-wand-magic-sparkles fs-4" style="color: var(--primary-pink);"></i>
+            </div>
+        </div>
+
+        <h1 class="display-3 fw-bold brand-font mb-3">
+            Elevate Your Beauty<br>
+            <span style="color: var(--primary-pink);">Reveal Your Radiance</span>
+        </h1>
+        
+        <p class="lead text-muted mx-auto mb-5" style="max-width: 650px; font-size: 1.1rem;">
+            Professional makeup artistry for your most special moments. From bridal beauty to editorial glamour, I create looks that celebrate your unique essence.
+        </p>
+        
+        <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap">
+            <a href="/contact" class="btn btn-brand shadow-sm">Book Your Session</a>
+            <a href="/portfolio" class="btn btn-light border bg-white shadow-sm" style="color: var(--text-dark); padding: 10px 24px; font-weight: 600;">View Portfolio</a>
+        </div>
+
+        <div class="row justify-content-center g-3 mt-4">
+            <div class="col-6 col-md-3">
+                <div class="bg-white p-4 rounded shadow-sm h-100 transition-up">
+                    <h3 class="brand-font mb-1" style="color: var(--primary-pink);">8+</h3>
+                    <small class="text-muted text-uppercase fw-bold" style="font-size: 0.70rem; letter-spacing: 1px;">Years Experience</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="bg-white p-4 rounded shadow-sm h-100 transition-up">
+                    <h3 class="brand-font mb-1" style="color: var(--primary-pink);">500+</h3>
+                    <small class="text-muted text-uppercase fw-bold" style="font-size: 0.70rem; letter-spacing: 1px;">Happy Clients</small>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="bg-white p-4 rounded shadow-sm h-100 transition-up">
+                    <h3 class="brand-font mb-1" style="color: var(--primary-pink);">200+</h3>
+                    <small class="text-muted text-uppercase fw-bold" style="font-size: 0.70rem; letter-spacing: 1px;">Weddings</small>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    .transition-up { transition: transform 0.3s ease; }
+    .transition-up:hover { transform: translateY(-5px); }
+</style>
+{% endblock %}
