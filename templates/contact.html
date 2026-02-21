@@ -56,19 +56,19 @@
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <label class="form-label small fw-bold">Full Name *</label>
-                                <input type="text" class="form-control" placeholder="Your name" required>
+                                <input type="text" class="form-control" name="name" placeholder="Your name" required>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label small fw-bold">Email Address *</label>
-                                <input type="email" class="form-control" placeholder="Email@example.com" required>
+                                <input type="email" class="form-control" name="email" placeholder="Email@example.com" required>
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label small fw-bold">Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="(000) 000-0000">
+                                <input type="tel" class="form-control" name="phone" placeholder="(000) 000-0000">
                             </div>
                             <div class="col-md-6">
                                 <label class="form-label small fw-bold">Service Interested In *</label>
-                                <select class="form-select" required>
+                                <select class="form-select" name="service" required>
                                     <option value="" selected disabled>Select a service</option>
                                     <option value="bridal">Bridal Makeup</option>
                                     <option value="event">Special Event Glam</option>
@@ -78,11 +78,11 @@
                             </div>
                             <div class="col-12">
                                 <label class="form-label small fw-bold">Preferred Date</label>
-                                <input type="date" class="form-control">
+                                <input type="date" name="date" class="form-control">
                             </div>
                             <div class="col-12">
                                 <label class="form-label small fw-bold">Message *</label>
-                                <textarea class="form-control" rows="5" placeholder="Tell me about your vision and what you're looking for..." required></textarea>
+                                <textarea class="form-control" name="message" rows="5" placeholder="Tell me about your vision and what you're looking for..." required></textarea>
                             </div>
                             <div class="col-12 mt-4">
                                 <button type="submit" class="btn btn-brand w-100 py-3 shadow">Send Message</button>
