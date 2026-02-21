@@ -1,8 +1,9 @@
 import os
+import json
 import cloudinary
 import cloudinary.uploader
 from flask import Flask, render_template, request
-from firebase_admin import credentials, firestore 
+from firebase_admin import credentials, firestore, initialize_app
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -53,10 +54,19 @@ def about():
 def blog():
     return render_template('blog.html')
 
-# Initialize Firebase Firestore
-# Ensure serviceAccountKey.json is in your main project folder
-cred = credentials.Certificate("serviceAccountKey.json")
-firebase_admin.initialize_app(cred)
+# Initialize Firebase from Environment Variable instead of a file
+service_account_info = os.getenv('FIREBASE_SERVICE_ACCOUNT')
+
+if service_account_info:
+    # Parse the JSON string into a dictionary
+    cert_dict = json.loads(service_account_info)
+    cred = credentials.Certificate(cert_dict)
+    initialize_app(cred)
+else:
+    # Fallback for local testing if you still have the file locally
+    cred = credentials.Certificate("serviceAccountKey.json")
+    initialize_app(cred)
+
 db = firestore.client()
 
 @app.route('/contact', methods=['GET', 'POST'])
